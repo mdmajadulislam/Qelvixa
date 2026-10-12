@@ -1,0 +1,294 @@
+/*--============ variables ====================--*/
+
+:root{
+    /* background color */
+    --background-color: #FFFFFF;
+    --secondary-color: #BDBDBD;
+    --button-hover-color: #0066ffff;
+
+    /* text color */
+    --border-color: #ddd;
+    --text-color: #000000;
+    --secondary-text: #c7c7c7;
+    --button-text-color: #fff;
+    
+    /* font size */
+    --heading-size: 24px;
+    --subheading-size: 20px;
+    --font-size: 16px;
+    --button-fontSize: 21px;     
+}
+
+a, button{cursor: pointer;}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--background-color);
+    width: 100%;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    padding: 2rem 4rem 4rem 4rem;
+}
+
+/*--============== heading ====================--*/
+img{
+    width: 40px;
+    height: 40px;
+}
+
+.header{
+    width: 100%;
+}
+
+/*--============== Nav Bar =====================*/
+.nav-bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/*--============== Logo =====================*/
+.nav-bar .logo img{
+    width: 100px;
+    height: 40px;
+}
+
+/*--============== nav ====================*/
+.nav-bar .nav{
+    display: flex;
+    gap: 30px;
+}
+
+.nav-bar .nav .nav-item{
+    font-size: var(--subheading-size);
+    color: var(--secondary-text);
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.nav-bar .nav .nav-item:hover{
+    color: var(--button-hover-color);
+}
+
+/*--=========== setting =================--*/
+.setting{
+    display: flex;
+    gap: 20px;
+    padding: 4px;
+    align-items: center;
+}
+
+/*---------------------------*/
+#profileImg{
+    border: 2px solid var(--border-color);
+    border-radius: 100%;
+    width: 42px;
+    height: 42px;
+}
+/*--------------------------*/
+#profileImg img{
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+}
+
+/*----------------------------*/
+#name a{
+    font-size: var(--font-size);
+    color: var(--secondary-text);
+    text-decoration: none;
+    font-weight: bold;
+}
+#name a:hover{
+    color: var(--button-hover-color);
+}
+
+/*----------------------------*/
+.setting #sideBar{
+    border: none;
+    background: none;
+    font-size: var(--subheading-size);
+}
+.setting #sideBar:hover{
+    background: var(--text-color);
+    padding: 2px;
+}
+
+
+/*--=================== Search box ==========--*/
+.search-bar{
+    padding: 6rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*-----------------------------------------*/
+.search-bar button{
+    background: none;
+    border: none;
+    padding: 10px;
+    position: absolute;
+    font-size: 32px;
+    margin-left: -530px;
+}
+/*-----------------------------------------*/
+.search-bar input{
+    width: 600px;
+    padding: 30px;
+    padding-left: 60px;
+    background: none;
+    border: 2px solid var(--border-color);
+    color: var(--secondary-color);
+    font-size: var(--font-size);
+    font-weight: bold;
+    border-radius: 24px;
+}
+.search-bar input:focus{
+    color: var(--text-color);
+}
+
+
+
+
+
+
+/*--============== Main section ====================--*/
+.main{
+    width: 100%;
+    padding: 0rem 4rem 4rem 4rem;
+}
+
+/* hero section */
+
+/*============== Heading Line ========================*/
+.heading-line{
+    text-align: center;
+    font-size: var(--heading-size);
+    font-weight: bold;
+    padding-bottom: 4rem;
+}
+
+/*--======================== =Hero continer ===================-- */
+.hero-continer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*============== Griad Items ===================================*/
+.grid-items{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 4rem;
+    gap: 30px;
+}
+
+/*-----------------------items --------------*/
+.grid-items .items{
+    border: 2px solid var(--border-color);
+    padding: 20px;
+}
+/*----------------------------------------*/
+.grid-items .items .top-items{
+    display: flex;
+    gap: 20px;
+}
+
+/*----------------- images-box ----------*/
+.grid-items .items .top-items .images-gridbox{
+    background-color: #000;
+    width: 40px;
+    height: auto;
+    border: 2px solid var(--border-color);
+    border-radius: 2px;
+    padding: 2px;
+}
+.grid-items .items .top-items .images-gridbox{
+    width: 38px;
+    height: auto;
+}
+
+/*------------------- text-box -----------*/
+.grid-items .items .top-items .text-box{
+    display: flex;
+    flex-direction: column;
+}
+.grid-items .items .top-items .text-box .content-heading{
+    font-size: var(--font-size);
+    color: var(--text-color);
+    font-weight: bold;
+    overflow: none;
+    padding: 4px;
+}
+
+.grid-items .items .top-items .text-box .total-views{
+    font-size: 8px;
+    font-weight: lighter;
+    color: var(--secondary-color);
+    padding: 2px;
+}
+
+/*==================== button view more==============*/
+.button{
+    width: 100%;
+    margin-top: 4px;
+    padding: 4px;
+    color: var(--button-hover-color);
+    background: var(--border-color);
+    border: 1px solid #000;
+    border-radius: 30px;
+    font-weight: bold;
+}
+.button:hover{
+    background: var(--button-hover-color);
+    color: var(--background-color);
+    border-color: var(--border-color);
+}
+
+/*--============= aside arrow button --==========--*/
+#arrow-left{
+    background: none;
+    font-size: 20px;
+    border: none;
+}
+
+#arrow-right{
+    background: none;
+    font-size: 20px;
+    border: none;
+}
+
+#arrow-left:hover, #arrow-right:hover{
+    background: var(--text-color);
+}
+
+/*--============ section button Show More -------====*/
+.show-more{
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#showMore{
+    width: 300px;
+    padding: 16px;
+    color: var(--button-hover-color);
+    background: var(--border-color);
+    border: 1px solid var(--text-color);
+    border-radius: 20px;
+    font-weight: bold;
+}
+#showMore:hover{
+    background: var(--button-hover-color);
+    color: var(--background-color);
+    border-color: var(--border-color);
+}
