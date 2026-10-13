@@ -76,6 +76,11 @@ img{
     color: var(--button-hover-color);
 }
 
+
+/* reposive small size usage */
+.m-logo{
+    display: none;
+}
 /*--=========== setting =================--*/
 .setting{
     display: flex;
@@ -180,7 +185,7 @@ img{
 .hero-continer{
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
 }
 
 /*============== Griad Items ===================================*/
@@ -291,4 +296,67 @@ img{
     background: var(--button-hover-color);
     color: var(--background-color);
     border-color: var(--border-color);
+}
+
+
+
+/*=============================================================================
+                        Responsive Design                                     
+===============================================================================*/
+@media(max-width: 768px){
+
+
+    .nav-bar .nav .nav-item{
+        display: none;
+    }
+ 
+
+    .nav-bar .logo img{
+        display: none;
+    }
+    
+
+    .m-logo{
+        display: flex;
+        justify-content: center;
+        margin-top: 100px;
+        width: 100%;
+        height: 100px;
+        padding: 4px;
+    }
+    .m-logo img{
+        width: 150px;
+        height: 70px;
+    }
+
+    .search-bar{
+        padding: 6px 4rem 4rem 4rem;
+    }
+
+    /*----------------------------*/
+    #name a{
+       display: none;
+    }
+
+
+    /*--------- section -------*/
+    .heading-line{
+        text-align: center;
+        font-size: var(--subheading-size);
+        font-weight: bold;
+        padding-bottom: 2rem;
+    }
+
+    .grid-items{
+       grid-template-columns: repeat(1, 1fr);
+       padding: 2rem;
+    }
+
+
+    .show-more{
+       padding: 4px;
+    }
+    #showMore{
+       width: 250px;
+    }
 }
