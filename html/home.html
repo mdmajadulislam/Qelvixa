@@ -6,6 +6,7 @@
         <title>Qevixa</title>
         <link rel="shortcut icon" href="../icons/icons.svg" type="image/svg">
         <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==" crossorigin="anonymous" referrerpolicy="no-referrer">
     </head>
 
     <body>
@@ -13,6 +14,8 @@
         <header class="header">
             <!------------ Nav section --------------->
             <div class="nav-bar">
+                <!-------- Responsive Design---------------->
+                <div class="menu-icons"><button type="button" id="navBtn"><i class="fa-solid fa-bars-staggered"></i></button></div>
                 <!--------- Logo box (left bar) --------------->
                 <div class="logo">
                     <img src="../icons/logo.png" alt="Website Logo">
@@ -43,16 +46,24 @@
             </div>
 
             <!--=========== reposive logo ==================-->
+            <nav id="nav">
+                <a href="" class="nav-item">Home</a>
+                <a href="" class="nav-item">Images</a>
+                <a href="" class="nav-item">Videos</a>
+                <a href="" class="nav-item">Shopping</a>
+                <a href="" class="nav-item">News</a>                
+            </nav>
             <div class="m-logo">
                 <img src="../icons/logo.png" alt="Website Logo">
             </div>
             <!--------------- Search box --------------------->
-            <div class="search-bar">
-                <button class="search-icon">🔍</button>
-                <input type="search" id="search" name="search" placeholder="Ask Qelvixa">
+            <div class="search-continer">
+                <div class="search-box">
+                    <button class="search-icon"><i class="fa-brands fa-sistrix"></i></button>
+                    <input type="search" id="search" name="search" placeholder="Ask Qelvixa">
+                </div>
             </div>
         </header>
-
 
 
 

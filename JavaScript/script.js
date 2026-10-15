@@ -1,4 +1,6 @@
 const sideBar = document.getElementById("sideBar");
+const nav = document.getElementById("nav");
+const navBtn = document.getElementById("navBtn");
 
 //backgrond drak lisht 
 sideBar.addEventListener("click", () => {
@@ -12,6 +14,24 @@ sideBar.addEventListener("click", () => {
         document.body.style.backgroundColor = "#FFFFFF";
     }
 })
+
+
+//nav menu 
+function navMenu(){
+    navBtn.addEventListener("click", () => {
+        if(nav.style.display === 'block'){
+            nav.style.display = "none";
+
+        }else{
+            nav.style.display = "block";
+            nav.style.display = "flex";                   
+            navBtn.style.color = "blue";
+        }
+    })
+}
+navMenu();
+
+
 
 
 //view more 
